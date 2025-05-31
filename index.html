@@ -37,7 +37,7 @@
               grayHeadline: "#061800",
               grayHeadline: "#061800",
               grayParagraph: "#384633",
-              white: "#3E3E3E",
+              // white: "#3E3E3E",
             },
             fontFamily: {
               primary: ["DM Sans", "sans-serif"],
@@ -56,8 +56,55 @@
     <title>Doctor Care</title>
   </head>
   <body class="bg-greenLight2 overflow-x-hidden">
-    <h2 class="text-3xl underline font-bold text-primary font-primary">
-      hello world.I am Sohel
-    </h2>
+    <!-- header section -->
+    <header
+      id="header"
+      class="bg-[#DCE9E2] text-primary fixed top-0 right-0 left-0 w-full z-50"
+    >
+      <nav
+        class="container max-w-screen-lg mx-auto flex justify-between items-center p-4"
+      >
+        <!-- logo -->
+        <div class="text-xl font-bold">
+          <a href="/" class="text-black"
+            >Doctor<span class="text-primary">Care</span>
+          </a>
+        </div>
+
+        <!-- menu items -->
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a href="#home" class="hover:text-primary">Início</a>
+          </li>
+          <li><a href="#services" class="hover:text-primary">Serviços</a></li>
+          <li><a href="#about" class="hover:text-primary">Sobre</a></li>
+          <li><a href="#contact" class="hover:text-primary">Depoimentos</a></li>
+        </ul>
+
+        <!-- call to action button -->
+        <div class="hidden md:block">
+          <a
+            id="contact-button"
+            href="#contact"
+            class="md:w-56 text-primary hover:text-white border border-primary px-6 py-2.5 rounded-full hover:bg-primary transition-all duration-200 md:flex justify-center"
+            >Agendar consulta</a
+          >
+        </div>
+
+        <!-- mobile navbar -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="navbar-burger flex items-center p-3"
+          >
+            <img
+              src="./images/menu-icon.svg"
+              alt="menu-icon"
+              class="block h-4 w-4 fill-current"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
